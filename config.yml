@@ -1,0 +1,128 @@
+kingdoms: 
+- jemoeder
+- jevader
+kingdomblocks:
+  jemoeder: wool:1
+  jevader: wool:2
+build_cost: 50
+break_cost: 30
+use_cost: 10
+use_materials:
+- chest
+- wood_door
+scoreboard:
+  title: '&c Informatie '
+  board:
+  - '&7Kingdom'
+  - '&f%kingdomName%'
+  - '    '
+  - '&7Rank'
+  - '&f%rank%'
+  - ' '
+  - '&7Influence'
+  - '&f%points%'
+  - '  '
+  - '&7Online?'
+  - '&f%online%'
+  - '   '
+  - '&7Locatie'
+  - '&f[%loc%&f]'
+friendly-fire:
+- 'jemoeder'
+scoreboard_war:
+  title: '&c Oorlog '
+  board:
+  - '&7Duur'
+  - '&f%duur%'
+  - ' '
+  - '&fDeelnemers: &f%deelnemers%'
+  - '&fGesneuveld: &f%gesneuveld%'
+  - '   '
+  - '&7Kills'
+  kills: '&f%kingdom%: %kills%'
+  kothl1: '        '
+  kothl2: '&7Koths'
+  koth: '&f%koth%: %time%'
+scoreboard_staff:
+  title: '&c Staff '
+  board:
+  - '&7Zichtbaar'
+  - '&f%zichtbaarheid%'
+  - '    '
+  - '&7GameMode'
+  - '&fCreative'
+  - ' '
+  - '&7Chat Mode'
+  - '&fPublic'
+  - '  '
+  - '&7Staff online'
+  - '&f%staff_c%'
+colors:
+  jemoeder: '&9jemoeder'
+  jevader: '&5jevader'
+ranks:
+- ridder1
+- ridder2
+- ridder3
+- hertog
+- koning
+rank:
+  ridder1:
+    prefix: '&8[&fRidder &6I&7]'
+  ridder2:
+    prefix: '&8[&fRidder &6II&7]'
+  ridder3:
+    prefix: '&8[&fRidder &6III&7]'
+  hertog:
+    prefix: '&7[2Hertog&7]'
+  koning:
+    prefix: '&7[6Koning&7]'
+messages:
+  kill: '%player_rank% %player_kingdom% %player%&7 is verwond door %killer_rank% %killer_kingdom% %killer%'
+high_perms_nmr: 3
+high_perms:
+- 'essentials.ban'
+blacklist:
+- poep
+- chinees
+kothreward:
+  item: wood
+  amount: 1
+  itemData: 0
+  name: '&8reward'
+  lore: []
+crates:
+- test
+crate:
+  test:
+    rewards:
+    - '1'
+    - '1'
+    - '2'
+    title: '&7Test crate'
+    lore:
+    - '&7Test'
+    reward:
+      1:
+        type: wood
+        amount: 1
+        data: 1
+        title: '&7Test reward'
+        lore:
+        - '&7Test'
+      2:
+        type: stone
+        amount: 1
+        data: 1
+        title: '&7Test reward'
+        lore:
+        - '&7Stoned'
+leaderboard:
+  format_top: '&7---------'
+  format: '&8%kingdom%: %kills%'
+  format_bottom: '&7---------'
+stats:
+  format_top: '&7----- statastieken van %player%'
+  format_deaths: '&7Deaths: %deaths%'
+  format_kills: '&7Kills: %kills%'
+cant_hit_because_ally: '&cJe kan &6%player% &cniet slaan omdat hij een ally is.'
